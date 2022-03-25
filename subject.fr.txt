@@ -48,9 +48,13 @@ Cette operation fera dessiné un rectangle plein
 - HEIGHT: un float positif different de 0, la hauteur du cercle (verticale)
 - CHAR: un char, le caractère utilisé pour dessiner le rectangle
 
-La "zone de dessin" est divisé en rectangle qui peuvent chacun contenir un seul caractère (c'est parce qu'on est dans un terminal...) nous les appelerons pixel
+La "zone de dessin" est divisé en rectangle qui peuvent chacun contenir un seul caractère (c'est parce qu'on est dans un terminal...) 
+nous les appelerons pixel
+
 Pour faciliter les calculs nous n'utiliserons que le coin en haut à gauche d'un pixel pour savoir si celui ci est dans un rectangle ou pas
+
 Si le coin en haut a gauche d'un pixel est à une distance superieure ou egale à 1 de la bordure d un rectangle celui ci ne fait pas parti d'un rectangle vide
+
 Si le coin en haut a gauche d'un pixel est à une distance inferieur à 1 de la bordure d'un rectangle, il fait alors parti d'un rectangle vide
 
 Vous devriez regarder l'image fournie tout en lisant les prochaines lignes. Cette image represente le terminal. Nous avons fait une "zone de dessin" avec un WIDTH à 5 et une HEIGHT à 3
